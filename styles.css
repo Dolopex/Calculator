@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +12,10 @@ header{
     justify-content: space-between;
     padding: 2rem;
     background-color: #f24456;
+    height: 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para el menú */
+    z-index: 1000;
+    
 }
 
 .logo{
@@ -29,7 +34,8 @@ header{
 
 .lista li a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
 }
 .abrir,
 .cerrar {
@@ -43,9 +49,16 @@ header{
         display: none;
     }
 
+    /* Ocultar las opciones del menú por defecto */
     .opciones {
-        opacity: 0;
-        visibility: hidden;
+        display: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para el menú */
+        z-index: 1000;
+    }
+    
+    /* Mostrar el menú cuando esté activo */
+    .opciones.active {
+        display: block;
     }
     
     .opciones {
@@ -68,8 +81,93 @@ header{
 
     .lista li a{
         text-decoration: none;
-        color: black;
+        color: rgb(255, 255, 255);
+        font-family: sans-serif;
     }
 
     
 }
+.fa-solid  {
+    font-size: 30px;
+    color: white;
+}
+
+.fa-bars {
+    margin-left: auto;
+}
+
+#menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+#menu {
+    display: none;
+    margin-left: auto;
+}
+
+/* Mostrar el menú cuando tenga la clase 'active' en pantallas pequeñas */
+#menu.active {
+    display: block;
+}
+
+/* Mostrar el ícono del menú hamburguesa en pantallas pequeñas */
+/* Estilos para pantallas grandes (modo PC) */
+@media (min-width: 768px) {
+    /* Mostrar siempre el menú en pantallas grandes */
+    #menu {
+        display: block;
+        margin: left;
+        
+    }
+
+    /* Asegurarse de que el ícono del menú hamburguesa esté oculto en pantallas grandes */
+    .fa-bars {
+        display: none !important; /* Fuerza el ocultamiento */
+        margin-left: auto;
+    }
+}
+
+.logo {
+    transform: scaleX(-1); /* Invertir horizontalmente */
+    width: 500px; /* Ajustar al ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    max-width: 500px; /* Limitar el tamaño máximo de la imagen */
+    margin-right: 200px; /* Centrar la imagen si es necesario */
+    margin-top: 30px;
+    margin-left: auto; /* Empuja la imagen a la derecha */
+    display: block; /* Asegúrate de que la imagen se comporte como un bloque */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 400px; /* Limitar el tamaño máximo de la imagen en móviles */
+    }
+}
+
+.container {
+    border: 0px solid rgba(100, 100, 100, 1);
+    border-radius: 25px;
+    background-color: #f24455;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: auto; /* Empuja la imagen a la derecha */
+    display: block; /* Asegúrate de que la imagen se comporte como un bloque */
+    margin-right: 300px; /* Centrar la imagen si es necesario */
+
+}
+
+h1 {
+    font-family: finlandica, sans-serif;
+    font-size: 100px;
+    color: #f24455;
+    margin-top:-290px;
+    margin-left: 100px;
+}
+  
