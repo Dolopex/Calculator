@@ -1,24 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Finlandica:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Contactos</title>
+    <title>CalcPro - Contacto</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <header>
-        <i class="fa-solid fa-bars"></i>
-        <img src="Icon.png" class="icono">
-        <nav class="opciones" id="menu">
-            <ul class="lista">
-                <li><a href="file:///C:/Users/garci/OneDrive/Desktop/calculadora/Calculator/index.html#", style="font-family: League Spartan">Inicio</a></li>
-                <li><a href="file:///C:/Users/garci/OneDrive/Desktop/calculadora/Calculator/contact.html", style="font-family: League Spartan">Contacto</a></li>
-                <li><a href="file:///C:/Users/garci/OneDrive/Desktop/calculadora/Calculator/quienes%20somos.html", style="font-family: League Spartan">Quienes somos</a></li>
+        <div class="logo">
+            <img src="logo.png" alt="CalcPro">
+            <h1>CalcPro</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Quiénes Somos</a></li>
             </ul>
         </nav>
+        <button id="dark-mode-toggle">Modo Oscuro</button>
     </header>
-</body>
-</html>
+
+    <section class="contact">
+        <h2>CONTACTO</h2>
+        <p>¿Tienes alguna <span>pregunta</span> o <span>sugerencia</span> sobre <strong>CalcPro</strong>? Nos encantaría saber de ti. Completa el formulario o usa nuestros datos de contacto directos.</p>
+
+        <div class="form-container">
+            <form>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>Información adicional de contacto:</h3>
+            <p><strong>Correo electrónico:</strong> soporte@calcpro.com</p>
+            <p><strong>Teléfono:</strong> +57 305 3827926</p>
+            <p><strong>Redes sociales:</strong></p>
+            <p>Facebook: @CalcProOficial</p>
+            <p>Twitter: @CalcPro_App</p>
+        </div>
+    </section>
