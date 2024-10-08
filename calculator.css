@@ -21,9 +21,6 @@ header{
     
 }
 
-.logo{
-    max-width: 5rem;
-}
 
 .abrir {
     display: none;
@@ -44,6 +41,10 @@ header{
 .cerrar {
         display: none;
     }
+
+.icono{
+    max-width: 14rem;
+}
 
 
 @media screen and (max-width: 550px) {
