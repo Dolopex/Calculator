@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULADORA</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <button class="abrir">abrir</button>
     <header>
-        <img class="logo" src="logo calculadora.jpg" alt="Logo" width="250"> 
         <i class="fa-solid fa-bars"></i>
-        <nav class="opciones">
-            <button>Cerrar</button>
+        <nav class="opciones" id="menu">
             <ul class="lista">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Contacto</a></li>
@@ -22,6 +22,39 @@
         </nav>
     </header>
 
-    <script src="main.js"></script>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="subcontainer">
+            <div class="buttons-container">
+                <button class="btn operator" data-action="delete"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="btn operator" data-action="clear">C</button>
+                <button class="btn operator" data-action="divide">÷</button>
+                <button class="btn operator" data-action="multiply">x</button>
+    
+                <button class="btn number">1</button>
+                <button class="btn number">2</button>
+                <button class="btn number">3</button>
+                <button class="btn operator" data-action="subtract">-</button>
+    
+                <button class="btn number">4</button>
+                <button class="btn number">5</button>
+                <button class="btn number">6</button>
+                <button class="btn operator" data-action="add">+</button>
+    
+                <button class="btn number">7</button>
+                <button class="btn number">8</button>
+                <button class="btn number">9</button>
+    
+                <button class="btn operator equals" data-action="equals">=</button>
+            
+                <button class="btn operator ac" data-action="clear">A/C</button>
+                <button class="btn number">0</button>
+                <button class="btn number">.</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="calculator.js"></script>
 </body>
 </html>
