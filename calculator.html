@@ -4,24 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INICIO</title>
+    <title>CALCULADORA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Finlandica:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calculator.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
         <img src="Icon.png" class="icono">
+        <i class="fa-solid fa-bars"></i>
         <nav class="opciones" id="menu">
             <ul class="lista">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="contact.html">Contacto</a></li>
                 <li><a href="calculator.html">Calculadora</a></li>
-                <label
+    </header>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="subcontainer">
+            <div class="buttons-container">
+                <button class="btn operator" data-action="delete"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="btn operator" data-action="clear">C</button>
+                <button class="btn operator" data-action="divide">÷</button>
+                <button class="btn operator" data-action="multiply">x</button>
+    
+                <button class="btn number">1</button>
+                <button class="btn number">2</button>
+                <button class="btn number">3</button>
+                <button class="btn operator" data-action="subtract">-</button>
+    
+                <button class="btn number">4</button>
+                <button class="btn number">5</button>
+                <button class="btn number">6</button>
+                <button class="btn operator" data-action="add">+</button>
+    
+                <button class="btn number">7</button>
+                <button class="btn number">8</button>
+                <button class="btn number">9</button>
+    
+                <button class="btn operator equals" data-action="equals">=</button>
+            
+                <button class="btn operator ac">
+                    <label
                       for="themeToggle"
                       class="themeToggle st-sunMoonThemeToggleBtn"
                       type="checkbox"
@@ -55,31 +82,15 @@
                         </g>
                       </svg>
                     </label>
-            </ul>
-        </nav>
-    </header>
-
-    
-    <div class="cuadro2">
-        <img class="imagen2" src="resource2.png">
-    </div>
-  
-        <img class="logo" src="logo calculadora.png" alt="Logo"> 
-
-    <h1 class="titulo">CalcPro</h1>
-
-    <h2><span id="uno">BIENVENIDOS A CALCPRO</span> <br>FACILITANDO TUS CALCULOS CON <br><span id="dos">PRECISION</span> y <span id="dos">SIMPLICIDAD</span></h2>
-
-    <h3>APP V1.0</h3>
-
-    <a class="boton" href="calculator.html">
-        <button>Ir a la calculadora</button>
-    </a>
-
-    <div class="cuadro1">
-        <img class="imagen1" src="resource1.png">
+                  </button>
+                  
+                <button class="btn number">0</button>
+                <button class="btn number">.</button>
+            </div>
+        </div>
     </div>
     
-    <script src="main.js"></script>
+
+    <script src="calculator.js"></script>
 </body>
 </html>

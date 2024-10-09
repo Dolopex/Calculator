@@ -19,7 +19,6 @@ document.addEventListener('click', (event) => {
     }
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const themeToggle = document.getElementById('themeToggle');
 
