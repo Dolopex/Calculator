@@ -19,6 +19,16 @@ header{
     
 }
 
+form textarea {
+    font-size: 1.2rem; /* Aumentar el tamaño de la fuente dentro del textarea */
+    width: 100%;       /* Ancho del textarea */
+    height: 500px;     /* Altura del textarea */
+    padding: 150px;     /* Espacio interior para el texto */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;  /* Permitir redimensionar verticalmente */
+}
+
 .opciones {
     font-family: League Spartan
 }
