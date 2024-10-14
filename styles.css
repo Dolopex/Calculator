@@ -198,8 +198,8 @@ form textarea {
         font-family: "League Spartan", sans-serif;
         font-size: 80px;
         color: #f24455;
-        margin-top: -560px;
-        margin-left: 100px;
+        margin-top: -545px;
+        margin-left: 130px;
         position: absolute;
 
 }
@@ -208,7 +208,7 @@ form textarea {
 h3 {
     position: absolute;
     margin-left: 500px;
-    margin-top: -160px;
+    margin-top: -145px;
     color: #A772F2;
     font-size: 20px;
 }
@@ -218,14 +218,14 @@ h3 {
     h3 {
         position: absolute;
         margin-left: 350px;
-        margin-top: -510px;
+        margin-top: -460px;
         color: #A772F2;
     }
 }
 
 h2 {
-    font-size: 37px;
-    margin-left: 50px;
+    font-size: 40px;
+    margin-left: 90px;
     margin-top: -300px;
     font-family: "League Spartan", sans-serif;
 }
@@ -274,7 +274,7 @@ button {
     font-size: 15px;
     transition: all 0.5s ease;
     position: absolute;
-    margin-left: 200px;
+    margin-left: 250px;
     margin-top: 30px;
     font-family: "League Spartan", sans-serif;
     color: white; /* Color del texto */
@@ -331,7 +331,7 @@ button:active {
         width: 110px;
         height: 105px;
         margin-left: 10px;
-        margin-top: -550px;
+        margin-top: -520px;
         z-index: -1;
     }
 }
@@ -364,7 +364,7 @@ button:active {
     .cuadro2 {
         width: 120px;
         height: 120px;
-        margin-left: 300px;
+        margin-left: 320px;
         margin-top: 327px;
     }
 }
