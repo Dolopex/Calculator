@@ -151,15 +151,6 @@ form textarea {
         margin-left: auto;
     }
 }
-
-@media (max-width: 768px) {
-    .cuadro1,
-    .cuadro2 {
-        visibility: hidden; /* El elemento no es visible pero ocupa espacio */
-        position: absolute;
-        left: -800px;
-    }
-}
  
 #uno {
     color: #f24456;
@@ -189,6 +180,7 @@ form textarea {
         margin-bottom: 100px;
         margin-left: center;
         margin-top: 50px;
+        margin-left: 20px;
     }
 }
 /* Estilos para pantallas grandes (modo PC) */
@@ -219,8 +211,8 @@ form textarea {
         font-family: "League Spartan", sans-serif;
         font-size: 80px;
         color: #f24455;
-        margin-top: -530px;
-        margin-left: 100px;
+        margin-top: -545px;
+        margin-left: 130px;
         position: absolute;
 
 }
@@ -228,23 +220,25 @@ form textarea {
 
 h3 {
     position: absolute;
-    left: 200px;
-    top: 280px;
+    margin-left: 500px;
+    margin-top: -145px;
     color: #A772F2;
+    font-size: 20px;
 }
+
 
 @media (max-width:768px) {
     h3 {
         position: absolute;
-        left: 370px;
-        top: 200px;
+        margin-left: 350px;
+        margin-top: -460px;
         color: #A772F2;
     }
 }
 
 h2 {
     font-size: 40px;
-    margin-left: 100px;
+    margin-left: 90px;
     margin-top: -300px;
     font-family: "League Spartan", sans-serif;
 }
@@ -293,11 +287,17 @@ button {
     font-size: 15px;
     transition: all 0.5s ease;
     position: absolute;
-    margin-left: 300px;
+    margin-left: 250px;
     margin-top: 30px;
     font-family: "League Spartan", sans-serif;
     color: white; /* Color del texto */
     text-decoration: none;
+}
+
+@media (max-width:768px) {
+    .boton {
+        margin-left: 100px;
+    }
 }
 
 button:hover {
@@ -321,32 +321,38 @@ button:active {
     height: 100px;
     transform: rotate(-5deg);
     z-index: 1;
-    position: absolute;
 }
 
 .cuadro1 {
-    width: 180px;
-    height: 130px;
-    background-color: #f24456;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    right: 100px; /* Mueve el cuadro hacia la derecha */
-    top: 150px;
-    transform: rotate(-25deg);
-    z-index: -1;
-    border-radius: 10px;
+        width: 130px;
+        height: 115px;
+        background-color: #f24456; 
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 700px;
+        margin-top: -300px;
+        transform: rotate(-25deg);
+        z-index: -1;
+        border-radius: 10px;       
+}
+
+@media (max-width:768px) {
+    .cuadro1 {
+        width: 110px;
+        height: 105px;
+        margin-left: 10px;
+        margin-top: -520px;
+        z-index: -1;
+    }
 }
 
 .imagen2 {
     width: 120px;
     height: 130px;
     position: absolute;
-
     transform: rotate(-15deg);
     z-index: -1;
 }
@@ -354,18 +360,26 @@ button:active {
 .cuadro2 {
     width: 140px;
     height: 130px;
-    background-color: #7922F2;
+    background-color: #7922F2; 
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 24px;
     font-weight: bold;
     position: absolute;
-    right: 50px; /* Mueve el cuadro hacia la derecha */
-    top: 400px;
     transform: rotate(-10deg);
     z-index: -1;
     border-radius: 10px;
+    margin-left: 1060px;
+    margin-top: 350px;
+}
+
+@media (max-width:768px) {
+    .cuadro2 {
+        width: 120px;
+        height: 120px;
+        margin-left: 320px;
+        margin-top: 327px;
+    }
 }
 
 /* Tema oscuro */
