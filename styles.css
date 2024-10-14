@@ -321,7 +321,6 @@ button:active {
     height: 100px;
     transform: rotate(-5deg);
     z-index: 1;
-    position: absolute;
 }
 
 .cuadro1 {
@@ -354,7 +353,6 @@ button:active {
     width: 120px;
     height: 130px;
     position: absolute;
-
     transform: rotate(-15deg);
     z-index: -1;
 }
@@ -362,15 +360,12 @@ button:active {
 .cuadro2 {
     width: 140px;
     height: 130px;
-    background-color: #7922F2;
+    background-color: #7922F2; 
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 24px;
     font-weight: bold;
     position: absolute;
-    right: 50px; /* Mueve el cuadro hacia la derecha */
-    top: 400px;
     transform: rotate(-10deg);
     z-index: -1;
     border-radius: 10px;
