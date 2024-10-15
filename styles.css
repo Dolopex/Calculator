@@ -173,14 +173,84 @@ form textarea {
 
 .scale-up-horizontal-left{animation:scale-up-horizontal-left 0.4s } @keyframes scale-up-horizontal-left{0%{transform:scaleX(.4);transform-origin:left center}100%{transform:scaleX(1);transform-origin:left center}}
 
+.imagen1 {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-5deg);
+    z-index: 1;
+}
+
+.cuadro1 {
+        width: 130px;
+        height: 115px;
+        background-color: #f24456; 
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 700px;
+        margin-top: -500px;
+        transform: rotate(-25deg);
+        z-index: -1;
+        border-radius: 10px;       
+}
+
+.imagen2 {
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+.cuadro2 {
+    width: 140px;
+    height: 130px;
+    background-color: #7922F2; 
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    transform: rotate(-10deg);
+    z-index: -1;
+    border-radius: 10px;
+    margin-left: 1060px;
+    margin-top: 350px;
+}
+
 /* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
     .logo {
-        max-width: 400px;
+        max-width: 600px;
         margin-bottom: 100px;
         margin-left: center;
-        margin-top: 50px;
+        margin-top: 100px;
         margin-left: -20px;
+    }
+    .cuadro1 {
+        width: 120px;
+        height: 110px;
+        margin-left:center;
+        margin-left: 0px;
+        margin-top: -580px;
+        z-index: -1;
+        }
+    .imagen1 {
+        width: 95px;
+        height: 95px;
+    }
+    .cuadro2 {
+        width: 120px;
+        height: 110px;
+        margin-left: left;
+        margin-left: 340px;
+        margin-top: 500px;
+    }
+    .imagen2 {
+        width: 100px;
+        height: 110px;
     }
 }
 /* Estilos para pantallas grandes (modo PC) */
@@ -201,21 +271,9 @@ form textarea {
     font-family: "League Spartan", sans-serif;
     font-size: 80px;
     color: #f24455;
-    margin-top:-410px;
+    margin-top: -20px;
     margin-left: 270px;
     position: absolute;
-}
-
-@media (max-width: 768px) {
-    .titulo {
-        font-family: "League Spartan", sans-serif;
-        font-size: 80px;
-        color: #f24455;
-        margin-top: -545px;
-        margin-left: 60px;
-        position: absolute;
-
-}
 }
 
 h3 {
@@ -226,38 +284,43 @@ h3 {
     font-size: 20px;
 }
 
-
-@media (max-width:768px) {
-    h3 {
-        position: absolute;
-        margin-left: 250px;
-        margin-top: -560px;
-        color: #A772F2;
-    }
-}
-
 h2 {
     font-size: 40px;
-    margin-left: 90px;
-    margin-top: -300px;
+    margin-left: left;
+    margin-left: 50px;
+    margin-top: 100px;
     font-family: "League Spartan", sans-serif;
 }
 
 @media (max-width:768px) {
+    h3 {
+        position: absolute;
+        margin-left: 300px;
+        margin-top: -590px;
+        color: #A772F2;
+    }
+    .titulo {
+        font-family: "League Spartan", sans-serif;
+        font-size: 80px;
+        color: #f24455;
+        margin-top: -200px;
+        text-align: center;
+        margin-left: 80px;
+        position: absolute;
+    }
     h2 {
         font-size: 30px;
+        margin-left: center;
         margin-left: 20px;
-        margin-top: -80px;
+        margin-top: 400px;
         font-family: "League Spartan",sans-serif;
     }
     .boton {
         position: relative;
-        left: -250px;
+        left: -200px;
         top: 0px;
     }
 }
-
-
 
 .degradado-sub span {
     background: linear-gradient(90deg, #f24456, #f22786);
@@ -314,84 +377,6 @@ button:active {
     box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
-}
-
-.imagen1 {
-    width: 100px;
-    height: 100px;
-    transform: rotate(-5deg);
-    z-index: 1;
-}
-
-.cuadro1 {
-        width: 130px;
-        height: 115px;
-        background-color: #f24456; 
-        display: flex;
-        justify-content: center;
-        color: white;
-        font-size: 24px;
-        font-weight: bold;
-        margin-left: 700px;
-        margin-top: -300px;
-        transform: rotate(-25deg);
-        z-index: -1;
-        border-radius: 10px;       
-}
-
-@media (max-width:768px) {
-    .cuadro1 {
-        width: 95px;
-        height: 90px;
-        margin:left;
-        margin-left: 0px;
-        margin-top: top;
-        margin-top: -590px;
-        z-index: -1;
-    }
-    .imagen1 {
-        width: 95px;
-        height: 85px;
-    }
-}
-
-.imagen2 {
-    width: 120px;
-    height: 130px;
-    position: absolute;
-    transform: rotate(-15deg);
-    z-index: -1;
-}
-
-.cuadro2 {
-    width: 140px;
-    height: 130px;
-    background-color: #7922F2; 
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    transform: rotate(-10deg);
-    z-index: -1;
-    border-radius: 10px;
-    margin-left: 1060px;
-    margin-top: 350px;
-}
-
-@media (max-width:768px) {
-    .cuadro2 {
-        width: 100px;
-        height: 100px;
-        margin-left: left;
-        margin-left: 240px;
-        margin-top: top;
-        margin-top: 320px;
-    }
-    .imagen2 {
-        width: 100px;
-        height: 110px;
-    }
 }
 
 /* Tema oscuro */
