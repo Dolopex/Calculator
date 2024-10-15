@@ -180,7 +180,7 @@ form textarea {
         margin-bottom: 100px;
         margin-left: center;
         margin-top: 50px;
-        margin-left: 20px;
+        margin-left: -20px;
     }
 }
 /* Estilos para pantallas grandes (modo PC) */
@@ -212,7 +212,7 @@ form textarea {
         font-size: 80px;
         color: #f24455;
         margin-top: -545px;
-        margin-left: 90px;
+        margin-left: 60px;
         position: absolute;
 
 }
@@ -230,8 +230,8 @@ h3 {
 @media (max-width:768px) {
     h3 {
         position: absolute;
-        margin-left: 310px;
-        margin-top: -480px;
+        margin-left: 250px;
+        margin-top: -560px;
         color: #A772F2;
     }
 }
@@ -341,11 +341,15 @@ button:active {
 
 @media (max-width:768px) {
     .cuadro1 {
-        width: 110px;
-        height: 105px;
+        width: 100px;
+        height: 95px;
         margin-left: 0px;
-        margin-top: -520px;
+        margin-top: -580px;
         z-index: -1;
+    }
+    .imagen1 {
+        width: 95px;
+        height: 85px;
     }
 }
 
@@ -377,7 +381,7 @@ button:active {
     .cuadro2 {
         width: 100px;
         height: 100px;
-        margin-left: 290px;
+        margin-left: 240px;
         margin-top: 350px;
     }
     .imagen2 {
