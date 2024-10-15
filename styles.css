@@ -223,15 +223,15 @@ form textarea {
 /* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
     .logo {
-        max-width: 450px;
+        max-width: 420px;
         margin-bottom: 100px;
         margin-left: center;
         margin-top: 100px;
-        margin-left: -20px;
+        margin-left: -10px;
     }
     .cuadro1 {
-        width: 120px;
-        height: 110px;
+        width: 100px;
+        height: 90px;
         margin-left:center;
         margin-left: 0px;
         margin-top: -550px;
@@ -242,15 +242,15 @@ form textarea {
         height: 95px;
     }
     .cuadro2 {
-        width: 120px;
-        height: 110px;
+        width: 90px;
+        height: 100px;
         margin-left: left;
         margin-left: 300px;
-        margin-top: 450px;
+        margin-top: 420px;
     }
     .imagen2 {
         width: 100px;
-        height: 110px;
+        height: 105px;
     }
 }
 /* Estilos para pantallas grandes (modo PC) */
@@ -296,14 +296,14 @@ h2 {
     h3 {
         position: absolute;
         margin-left: 230px;
-        margin-top: -560px;
+        margin-top: -520px;
         color: #A772F2;
     }
     .titulo {
         font-family: "League Spartan", sans-serif;
         font-size: 80px;
         color: #f24455;
-        margin-top: -180px;
+        margin-top: -150px;
         text-align: center;
         margin-left: 80px;
         position: absolute;
