@@ -341,10 +341,12 @@ button:active {
 
 @media (max-width:768px) {
     .cuadro1 {
-        width: 100px;
-        height: 95px;
+        width: 95px;
+        height: 90px;
+        margin:left;
         margin-left: 0px;
-        margin-top: -580px;
+        margin-top: top;
+        margin-top: -590px;
         z-index: -1;
     }
     .imagen1 {
@@ -381,8 +383,10 @@ button:active {
     .cuadro2 {
         width: 100px;
         height: 100px;
+        margin-left: left;
         margin-left: 240px;
-        margin-top: 350px;
+        margin-top: top;
+        margin-top: 320px;
     }
     .imagen2 {
         width: 100px;
