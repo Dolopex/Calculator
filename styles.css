@@ -158,68 +158,7 @@ form textarea {
 #dos {
     color: #7922F2;
 }
-
-.logo {
-    width: 500px; /* Ajustar al ancho del contenedor */
-    height: auto; /* Mantener la proporción de la imagen */
-    max-width: 500px; /* Limitar el tamaño máximo de la imagen */
-    margin-right: 200px; /* Centrar la imagen si es necesario */
-    margin-top: 10px;
-    margin-left: auto; /* Empuja la imagen a la derecha */
-    display: block; /* Asegúrate de que la imagen se comporte como un bloque */
-    z-index: 0;
-    animation: scale-up-horizontal-left 1.5s;
-}
-
-.scale-up-horizontal-left{animation:scale-up-horizontal-left 0.4s } @keyframes scale-up-horizontal-left{0%{transform:scaleX(.4);transform-origin:left center}100%{transform:scaleX(1);transform-origin:left center}}
-
-.imagen1 {
-    width: 100px;
-    height: 100px;
-    transform: rotate(-5deg);
-    z-index: 1;
-}
-
-.cuadro1 {
-        width: 130px;
-        height: 115px;
-        background-color: #f24456; 
-        display: flex;
-        justify-content: center;
-        color: white;
-        font-size: 24px;
-        font-weight: bold;
-        margin-left: 700px;
-        margin-top: -500px;
-        transform: rotate(-25deg);
-        z-index: -1;
-        border-radius: 10px;       
-}
-
-.imagen2 {
-    width: 120px;
-    height: 130px;
-    position: absolute;
-    transform: rotate(-15deg);
-    z-index: -1;
-}
-
-.cuadro2 {
-    width: 140px;
-    height: 130px;
-    background-color: #7922F2; 
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    transform: rotate(-10deg);
-    z-index: -1;
-    border-radius: 10px;
-    margin-left: 1060px;
-    margin-top: 350px;
-}
-
+  
 /* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
     .logo {
@@ -265,31 +204,6 @@ form textarea {
     .fa-bars {
         display: none !important; /* Fuerza el ocultamiento */
     }
-}
-
-.titulo {
-    font-family: "League Spartan", sans-serif;
-    font-size: 80px;
-    color: #f24455;
-    margin-top: -20px;
-    margin-left: 270px;
-    position: absolute;
-}
-
-h3 {
-    position: absolute;
-    margin-left: 500px;
-    margin-top: -145px;
-    color: #A772F2;
-    font-size: 20px;
-}
-
-h2 {
-    font-size: 40px;
-    margin-left: left;
-    margin-left: 50px;
-    margin-top: 100px;
-    font-family: "League Spartan", sans-serif;
 }
 
 @media (max-width:768px) {
@@ -338,24 +252,128 @@ header {
     max-width: 14rem;
 }
 
-button {
-    padding: 17px 40px;
-    border-radius: 50px;
-    cursor: pointer;
-    border: 0;
-    background-color: #f24456;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 15px;
-    transition: all 0.5s ease;
-    position: absolute;
-    margin-left: 250px;
-    margin-top: 30px;
-    font-family: "League Spartan", sans-serif;
-    color: white; /* Color del texto */
-    text-decoration: none;
+*{
+    margin: 0px;
+    padding: 0px;
 }
+
+.container {
+  margin-left: auto;
+  position: absolute;
+  left: 800px;
+  top: 150px;
+  width: 500px;
+  height: 500px;
+  margin: right;
+  position: fixed;
+  width: 500px;
+  height: 500px;
+}
+
+.logo {
+  width: 500px; /* Ajustar al ancho del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  max-width: 500px; /* Limitar el tamaño máximo de la imagen */
+  margin-right: 200px; /* Centrar la imagen si es necesario */
+  top: 10px;
+  left: auto; /* Empuja la imagen a la derecha */
+  display: block; /* Asegúrate de que la imagen se comporte como un bloque */
+  z-index: 0;
+}
+
+.imagen1 {
+    width: 100px;
+    height: 110px;
+}
+
+.cuadro1 {
+  text-align: center;
+  width: 120px;
+  height: 115px;
+  background-color: #f24456;
+  position: absolute;
+  left: 40px; 
+  top: -20px;  
+  transform: rotate(-25deg);
+  border-radius: 15px;
+}
+
+.imagen2 {
+  width: 105px;
+  height: 110px;
+}
+
+.cuadro2 {
+  text-align: center;
+  background-color: #7922F2;
+  width: 110px;
+  height: 100px;
+  position: absolute;
+  left: 370px;
+  top: 390px;
+  border-radius: 15px;
+  transform: rotate(-10deg);
+}
+
+.textos {
+  background-color: blue;
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+}
+
+.titulo {
+  font-size: 80px;
+  color: #f24455;
+  margin-left: auto;
+  position: absolute;
+  left: 300px;
+  top: 180px;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+}
+
+h3 {
+  margin-left: auto;
+  position: absolute;
+  left: 550px;
+  top: 250px;
+  color: #A772F2;
+  font-size: 25px;
+  font-family: "League Spartan", sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  margin-left: auto;
+  position: absolute;
+  left: 90px;
+  top: 300px;
+  font-family: "League Spartan", sans-serif;
+}
+
+button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: #f24456;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  margin-left: auto;
+  position: absolute;
+  left: 270px;
+  top: 450px;
+}
+
+
+.scale-up-horizontal-left{animation:scale-up-horizontal-left 0.4s } @keyframes scale-up-horizontal-left{0%{transform:scaleX(.4);transform-origin:left center}100%{transform:scaleX(1);transform-origin:left center}}
 
 @media (max-width:768px) {
     .boton {
