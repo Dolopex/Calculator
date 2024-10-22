@@ -2,18 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalcPro - Contacto</title>
+    <title>CALCULADORA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../styles/calculator.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
+
       <a href="index.html">
-        <img src="Icon.png" class="icono" href="index.html">
+        <img src="../resource/Icon.png" class="icono" href="index.html">
         </a>
         <i class="fa-solid fa-bars"></i>
         <nav class="opciones" id="menu">
@@ -21,7 +23,34 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="contact.html">Contacto</a></li>
                 <li><a href="calculator.html">Calculadora</a></li>
-                <label
+    </header>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="subcontainer">
+            <div class="buttons-container">
+                <button class="btn operator" data-action="delete"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="btn operator" data-action="clear">C</button>
+                <button class="btn operator" data-action="divide">÷</button>
+                <button class="btn operator" data-action="multiply">x</button>
+    
+                <button class="btn number">1</button>
+                <button class="btn number">2</button>
+                <button class="btn number">3</button>
+                <button class="btn operator" data-action="subtract">-</button>
+                
+                <button class="btn number">4</button>
+                <button class="btn number">5</button>
+                <button class="btn number">6</button>
+                <button class="btn operator" data-action="add">+</button>
+    
+                <button class="btn number">7</button>
+                <button class="btn number">8</button>
+                <button class="btn number">9</button>
+    
+                <button class="btn operator equals" data-action="equals">=</button>
+            
+                <button class="btn operator ac">
+                    <label
                       for="themeToggle"
                       class="themeToggle st-sunMoonThemeToggleBtn"
                       type="checkbox"
@@ -55,31 +84,15 @@
                         </g>
                       </svg>
                     </label>
-                
-            </ul>
-        </nav>
-    </header>
-
-    <section class="contact">
-        <h2>CONTACTO</h2>
-        <p>¿Tienes alguna <span>pregunta</span> o <span>sugerencia</span> sobre <strong>CalcPro</strong>? Nos encantaría saber de ti. Completa el formulario o usa nuestros datos de contacto directos.</p>
-
-        <div class="form-container">
-            <form>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono">
-
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
+                  </button>
+                  
+                <button class="btn number">0</button>
+                <button class="btn number">.</button>
+            </div>
         </div>
+    </div>
+    
 
-
-    <script src="contact.js"></script>
-
-    </section>
+    <script src="../js/calculator.js"></script>
+</body>
+</html>
