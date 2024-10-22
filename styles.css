@@ -128,6 +128,7 @@ form textarea {
 #menu {
     display: none;
     margin-left: auto;
+    height: 100%;
 }
 
 /* Mostrar el menú cuando tenga la clase 'active' en pantallas pequeñas */
@@ -159,39 +160,6 @@ form textarea {
     color: #7922F2;
 }
   
-/* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-    .logo {
-        max-width: 420px;
-        margin-bottom: 100px;
-        margin-left: center;
-        margin-top: 100px;
-        margin-left: -10px;
-    }
-    .cuadro1 {
-        width: 100px;
-        height: 90px;
-        margin-left:center;
-        margin-left: 0px;
-        margin-top: -550px;
-        z-index: -1;
-        }
-    .imagen1 {
-        width: 95px;
-        height: 95px;
-    }
-    .cuadro2 {
-        width: 90px;
-        height: 100px;
-        margin-left: left;
-        margin-left: 300px;
-        margin-top: 420px;
-    }
-    .imagen2 {
-        width: 100px;
-        height: 105px;
-    }
-}
 /* Estilos para pantallas grandes (modo PC) */
 @media (min-width: 768px) {
     /* Mostrar siempre el menú en pantallas grandes */
@@ -257,24 +225,10 @@ header {
     padding: 0px;
 }
 
-.container {
-  margin-left: auto;
-  position: absolute;
-  left: 800px;
-  top: 150px;
-  width: 500px;
-  height: 500px;
-  margin: right;
-  position: fixed;
-  width: 500px;
-  height: 500px;
-}
-
 .logo {
   width: 500px; /* Ajustar al ancho del contenedor */
   height: auto; /* Mantener la proporción de la imagen */
   max-width: 500px; /* Limitar el tamaño máximo de la imagen */
-  margin-right: 200px; /* Centrar la imagen si es necesario */
   top: 10px;
   left: auto; /* Empuja la imagen a la derecha */
   display: block; /* Asegúrate de que la imagen se comporte como un bloque */
@@ -293,7 +247,7 @@ header {
   background-color: #f24456;
   position: absolute;
   left: 40px; 
-  top: -20px;  
+  top: 0px;  
   transform: rotate(-25deg);
   border-radius: 15px;
 }
@@ -310,9 +264,59 @@ header {
   height: 100px;
   position: absolute;
   left: 370px;
-  top: 390px;
+  top: 400px;
   border-radius: 15px;
   transform: rotate(-10deg);
+}
+
+@media (min-width:768px) {
+  .container {
+    min-width: 500px;
+    width: auto;
+    height: auto;
+    height: 400px;
+    position: absolute;
+    left: 800px;
+    top: 115px;
+  }  
+}
+
+@media (max-width:768px) {
+  .container {
+    width: 500px; /* Mantén el ancho relativo */
+    max-width: 900px; /* Limita el tamaño máximo */
+    position: absolute; /* Posiciona el contenedor absolutamente */
+    margin: right;
+    left: -30px;
+    top: 210px; /* Controla la posición desde arriba */
+    margin: 0; /* Quita cualquier margen automático que lo centre */
+    text-align: right; /* Alinea el contenido interno a la derecha */
+    float: right;
+  }
+
+  body {
+    overflow-x: hidden; /* Evitar scroll horizontal */
+  }
+
+  .cuadro1 {
+    left: 40px;
+    top: -10px;
+    width: 110px;
+    height: 100px;
+  }
+  .imagen1 {
+    width: 95px;
+    height: 100px;
+  }
+
+  .cuadro2 {
+    left: 320px;
+    top: 400px;
+  }
+  .logo {
+    width: 470px;
+    height: 490px;
+  }
 }
 
 .textos {
@@ -376,7 +380,26 @@ button {
 
 @media (max-width:768px) {
     .boton {
-        margin-left: 100px;
+      position: absolute;
+      left: -150px;
+      top: 480px;
+      margin-top: 50px;
+    }
+
+    .titulo {
+      position: absolute;
+      left: 100px;
+      top: 300px;
+    }
+    h2 {
+      position: absolute;
+      left: 10px;
+      top: 370px;
+    }
+    h3 {
+      position: absolute;
+      left: 280px;
+      top: 750px;
     }
 }
 
