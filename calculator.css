@@ -200,8 +200,8 @@ body, .navbar, .calculator, .btn.equals, .btn.operator {
 .calculator {
     border: 0px solid rgba(100, 100, 100, 1);
     border-radius: 30px;
-    width: 390px;
-    height: 712px;
+    width: 360px;
+    height: 740px;
     background-color: #fdfcfc;
     margin: auto;
     position: relative;
@@ -228,7 +228,7 @@ body, .navbar, .calculator, .btn.equals, .btn.operator {
 .subcontainer {
     border: 0px solid rgba(100, 100, 100, 1);
     border-radius: 30px;
-    width: 390px;
+    width: 360px;
     height: 450px;
     background-color: #ebd5db40;
     position: absolute; /* Permite posicionarlo relativo al .calculator */
