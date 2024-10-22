@@ -2,22 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
-    <title>INICIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcPro - Contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Finlandica:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <a href="index.html">
-        <img src="Icon.png" class="icono" href="index.html">
+      <a href="index.html">
+        <img src="../resource/Icon.png" class="icono" href="index.html">
         </a>
+        <i class="fa-solid fa-bars"></i>
         <nav class="opciones" id="menu">
             <ul class="lista">
                 <li><a href="index.html">Inicio</a></li>
@@ -57,30 +55,31 @@
                         </g>
                       </svg>
                     </label>
+                
             </ul>
         </nav>
     </header>
 
-    <div class="container">
-      <img class="logo" src="logo calculadora.png" alt="Logo">  
-      <div class="cuadro1">
-        <img class="imagen1" src="resource1.png">
+    <section class="contact">
+        <h2>CONTACTO</h2>
+        <p>¿Tienes alguna <span>pregunta</span> o <span>sugerencia</span> sobre <strong>CalcPro</strong>? Nos encantaría saber de ti. Completa el formulario o usa nuestros datos de contacto directos.</p>
+
+        <div class="form-container">
+            <form>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-      <div class="cuadro2">
-        <img class="imagen2" src="resource2.png">
-      </div>
-    </div>
 
-    <h1 class="titulo">CalcPro</h1>
 
-    <h2><span id="uno">BIENVENIDOS A CALCPRO</span> <br>FACILITANDO TUS CALCULOS CON <br><span id="dos">PRECISION</span> y <span id="dos">SIMPLICIDAD</span></h2>
+    <script src="../js/contact.js"></script>
 
-    <h3>APP V1.0</h3>
-
-    <a class="boton" href="calculator.html">
-        <button>Ir a la calculadora</button>
-    </a>
-    
-    <script src="main.js"></script>
-</body>
-</html>
+    </section>
