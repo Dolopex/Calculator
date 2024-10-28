@@ -218,6 +218,9 @@ header {
 
 .icono{
     max-width: 14rem;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 
 *{
@@ -389,14 +392,14 @@ button {
 @media (max-width:768px) {
     .boton {
       position: absolute;
-      left: -150px;
+      left: -170px;
       top: 480px;
       margin-top: 50px;
     }
 
     .titulo {
       position: absolute;
-      left: 70px;
+      left: 60px;
       top: 270px;
     }
     h2 {
